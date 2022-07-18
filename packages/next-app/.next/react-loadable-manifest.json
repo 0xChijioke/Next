@@ -1,0 +1,16 @@
+{
+  "../helpers/loadAppContracts.js -> ../contracts/external_contracts": {
+    "id": "../helpers/loadAppContracts.js -> ../contracts/external_contracts",
+    "files": []
+  },
+  "../helpers/loadAppContracts.js -> ../contracts/hardhat_contracts.json": {
+    "id": "../helpers/loadAppContracts.js -> ../contracts/hardhat_contracts.json",
+    "files": []
+  },
+  "index.js -> ../components/App": {
+    "id": "index.js -> ../components/App",
+    "files": [
+      "static/chunks/src_components_App_jsx.js"
+    ]
+  }
+}
