@@ -5,6 +5,7 @@ import { ThemeSwitcherProvider } from "react-css-theme-switcher";
 import ReactDOM from "react-dom";
 import Head from 'next/head'
 import 'antd/dist/antd.css';
+import { ScaffoldProvider } from "../helpers/ScaffoldContext";
 
 const subgraphUri = "http://localhost:8000/subgraphs/name/scaffold-eth/your-contract";
 
@@ -28,7 +29,7 @@ function App({Component, PageProps})
   return(
     <>
       <Head>
-          <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> */}
+          <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
           <meta name="viewport" content="width=device-width, initial-scale=0.6, maximum-scale=1.0, user-scalable=0" />
           <meta name="theme-color" content="#000000" />
           <meta name="description" content="Web site created using 🏗 scaffold-eth" />
@@ -37,11 +38,13 @@ function App({Component, PageProps})
           <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
           <title>Ethereum App</title>
         </Head>
-        <ApolloProvider client={client}>
-            <ThemeSwitcherProvider themeMap={themes} defaultTheme={prevTheme || "light"}>
-                <Component {...PageProps} subgraphUri={subgraphUri} />
-            </ThemeSwitcherProvider>
-        </ApolloProvider>
+        {/* <ScaffoldProvider> */}
+          <ApolloProvider client={client}>
+              <ThemeSwitcherProvider themeMap={themes} defaultTheme={prevTheme || "light"}>
+                  <Component {...PageProps} subgraphUri={subgraphUri} />
+              </ThemeSwitcherProvider>
+          </ApolloProvider>
+        {/* </ScaffoldProvider> */}
       </>
     )
 }

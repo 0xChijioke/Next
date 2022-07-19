@@ -1,21 +1,11 @@
 {
   "../helpers/loadAppContracts.js -> ../contracts/external_contracts": {
     "id": "../helpers/loadAppContracts.js -> ../contracts/external_contracts",
-    "files": [
-      "static/chunks/src_contracts_external_contracts_js.js"
-    ]
+    "files": []
   },
   "../helpers/loadAppContracts.js -> ../contracts/hardhat_contracts.json": {
     "id": "../helpers/loadAppContracts.js -> ../contracts/hardhat_contracts.json",
-    "files": [
-      "static/chunks/src_contracts_hardhat_contracts_json.js"
-    ]
-  },
-  "hints.js -> ../views/Hints": {
-    "id": "hints.js -> ../views/Hints",
-    "files": [
-      "static/chunks/src_views_Hints_jsx.js"
-    ]
+    "files": []
   },
   "index.js -> ../components/App": {
     "id": "index.js -> ../components/App",
